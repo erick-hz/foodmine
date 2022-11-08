@@ -15,7 +15,9 @@ export class HomeComponent implements OnInit {
     activatedRoute.params.subscribe((params) => {
       if (params.searchTerm)
         this.foods = this.foodService.getAllFoodsBySearchTerm(params.searchTerm);
-        else
+      else if (params.tag)
+        this.foods = this.foodService.getAllFodsByTag(params.tag);
+      else
         this.foods = foodService.getAll();
 
     })
