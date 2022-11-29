@@ -1,21 +1,24 @@
+
 <header>
   <div class="container">
-    <a routerLink="/" class="logo">Food mine!</a>
+    <a routerLink="/" class="logo">Food Mine!</a>
     <nav>
       <ul>
-        <li>
+        <li *ngIf="!isAuth">
           <a routerLink="/login">Login</a>
         </li>
-        <li class="menu-continer">
-          <a routerLink="/dashboard">John</a>
+        <li *ngIf="isAuth" class="menu-container">
+          <a routerLink="/dashboard">{{user.name}}</a>
           <div class="menu">
             <a routerLink="/profile">Profile</a>
             <a routerLink="/orders">Orders</a>
-            <a>Logout</a>
+            <a (click)="logout()">Logout</a>
           </div>
         </li>
         <li>
-          <a routerLink="/cart-page">Cart <span>3</span></a>
+          <a routerLink="/cart-page">
+            Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+          </a>
         </li>
       </ul>
     </nav>

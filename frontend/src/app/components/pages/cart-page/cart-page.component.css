@@ -1,4 +1,4 @@
-.container {
+.container{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -6,10 +6,10 @@
   margin-top: 0.5rem;
 }
 
-ul {
+ul{
   display: flex;
   flex-direction: column;
-  flex: 3 0;
+  flex:3 0;
   justify-content: space-evenly;
   border: 1px solid #ffbbbb;
   border-radius: 1rem;
@@ -18,7 +18,7 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul li{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,26 +26,26 @@ ul li {
   border-bottom: 1px solid #e4e4e4;
 }
 
-ul li:last-child {
+ul li:last-child{
   border: none;
 }
 
-li img {
+li img{
   width: 5rem;
   height: 5rem;
   border-radius: 100rem;
   object-fit: cover;
 }
 
-li div {
+li div{
   padding: 1rem;
 }
 
-li div:not(:first-child) {
+li div:not(:first-child){
   flex-basis: 18%;
 }
 
-li select {
+li select{
   width: 3rem;
   outline: none;
   border: none;
@@ -54,7 +54,7 @@ li select {
   font-weight: 100;
 }
 
-li .remove-button {
+li .remove-button{
   border-radius: 1rem;
   border: none;
   padding: 0.5rem;
@@ -63,17 +63,17 @@ li .remove-button {
   outline: none;
 }
 
-li .remove-button:hover {
+li .remove-button:hover{
   opacity: 1;
   cursor: pointer;
 }
 
-.checkout {
+.checkout{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex: 1 3;
+  flex:1 3;
   height: 20rem;
   border: 1px solid #ffbbbb;
   border-radius: 1rem;
@@ -81,7 +81,7 @@ li .remove-button:hover {
   margin: 0.5rem;
 }
 
-.checkout>div {
+.checkout>div{
   font-size: 1.4rem;
   margin: 1rem;
   flex: 3;
@@ -91,24 +91,24 @@ li .remove-button:hover {
   align-items: flex-start;
 }
 
-.foods-count {
+.foods-count{
   margin-bottom: 1.5rem;
 }
 
-.foods-count::before {
-  content: "Count: ";
+.foods-count::before{
+  content:"Count: ";
   color: grey;
 }
 
-.total-price::before {
+.total-price::before{
   content: 'Price: ';
   color: grey;
 }
 
-.checkout a {
+.checkout a{
   padding: 1rem;
   color: white;
-  background: #e72929;
+  background:#e72929;
   display: block;
   width: 99%;
   border-radius: 1rem;
@@ -117,8 +117,7 @@ li .remove-button:hover {
   justify-self: center;
 }
 
-.checkout a:hover {
+.checkout a:hover{
   opacity: 1;
   cursor: pointer;
 }
- 
