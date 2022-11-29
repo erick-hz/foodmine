@@ -1,26 +1,26 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-top: 3rem;
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+margin-top: 3rem;
 }
 
-.details {
+.details{
   width: 28rem;
 }
 
-form {
+form{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.error-list {
+.error-list{
   color: red;
 }
 
-.register {
+.register{
   display: flex;
   justify-content: center;
   align-items: center;
